@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      initialRoute: "/login",
+      debugShowCheckedModeBanner: false,
+      initialRoute: MyRoutes.HomeRoute,
       routes: {//routes shows path for diff pages
         "/": (context) => LoginPage(),
         MyRoutes.HomeRoute:(context) => HomePage(),
